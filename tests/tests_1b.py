@@ -16,11 +16,13 @@ def test_subtraction():
     assert simple_calculator("subtract", 5, 3) == 2     # Test for positive numbers
     assert simple_calculator("subtract", -2, -2) == 0   # Test for negative numbers
     assert simple_calculator("subtract", 0, 5) == -5    # Test for zero minuend
+    assert simple_calculator("subtract", 5, 4) == 1
 
 def test_multiplication():
     assert simple_calculator("multiply", 5, 3) == 15    # Test for positive numbers
     assert simple_calculator("multiply", -2, 2) == -4   # Test for negative and positive number
     assert simple_calculator("multiply", 0, 100) == 0   # Test for multiplication by zero
+    assert simple_calculator("multiply", 4, 5)==20
 
 def test_division():
     assert simple_calculator("divide", 6, 3) == 2       # Test for positive numbers
